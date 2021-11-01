@@ -139,7 +139,6 @@ def menu(r):
 # private methods
 def getDirection(request):
     resultMap = {"north": 2, "east": 6, "south": 8, "west": 4}
-    print(request.form.keys())
     if 'SpeechResult' in request.form.keys():
         key = request.form['SpeechResult'].lower()
         print(key)
